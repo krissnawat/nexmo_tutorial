@@ -10,6 +10,7 @@ import { createStackNavigator, createAppContainer } from "react-navigation";
 import Login from "./src/components/Login";
 import MainChat from "./src/components/MainChat";
 import Register from "./src/components/Register";
+import OTP from "./src/components/OTP";
 const AppNavigator = createStackNavigator(
   {
     Login: {
@@ -20,10 +21,13 @@ const AppNavigator = createStackNavigator(
     },
     Register: {
       screen: Register
+    },
+    OTP: {
+      screen: OTP
     }
   },
   {
-    initialRouteName: "Register"
+    initialRouteName: "OTP"
   }
 );
 export default createAppContainer(AppNavigator);
